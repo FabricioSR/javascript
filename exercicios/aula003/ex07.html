@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+
+        }
+        input {
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+
+        div#resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> + 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    
+    
+    <h1>Somando novamente</h1>
+    <input type="number" id="primeironumero"> +
+    <input type="number" id="segundonumero"> +
+    <input type="number" id="terceironumero"> +
+    <input type="number" id="quartonumero"> +
+    <input type="button" value="Somar" onclick="somar2()">
+    <div id="resultado">Resultado</div>
+
+
+
+
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+
+        }
+
+        function somar2(){
+            var numero1 = document.getElementById('primeironumero') 
+            var numero2 = document.getElementById('segundonumero') 
+            var numero3 = document.getElementById('terceironumero') 
+            var numero4 = document.getElementById('quartonumero') 
+            var resultado = document.getElementById('resultado')
+            var nu1 = Number(numero1.value)
+            var nu2 = Number(numero2.value)
+            var nu3 = Number(numero3.value)
+            var nu4 = Number(numero4.value)
+            var som = nu1 + nu2 + nu3 + nu4
+            resultado.innerHTML = `Resultado da soma de ${nu1}, ${nu2}, ${nu3}, ${nu4} é <strong>${som}</strong>`
+        }
+
+    </script>
+    
+</body>
+</html>

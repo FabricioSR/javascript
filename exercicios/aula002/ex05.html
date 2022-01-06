@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(104, 104, 104);
+            color: wheat;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            font-weight: 300;
+            width: 700px;
+            margin: 28px;
+            padding: 28px;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com 'DOM'</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <br>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('esta escrito assim:  ' + p1.innerText)
+        window.document.write('<br>')
+        window.document.write('<br>')
+        
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write('está escrito assim: ' + p2.innerHTML)
+        document.write('<br> <br>')
+        
+        // var d = window.document.querySelector('div#msg')
+        var d = window.document.getElementById('msg')
+        d.innerText = 'Olá!'
+        document.write('Está escrit assim: ' + d.innerText)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio País</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 1.3em;
+            width: 500px;
+            margin: auto;
+            background-color: rgb(97, 97, 97);
+        }
+        div#main{
+            width: 600px;
+            background-color: blanchedalmond;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 20px;
+            
+            margin: 28px;
+            padding: 10px;
+            text-align: center;
+
+        }
+        input {
+            width: 100px;
+            background-color: rgb(158, 97, 97);
+            border-radius: 10px;
+            
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <h1>Nacionalidade</h1>
+    Em qual pais você vive? <input type="text" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"> Resultado </div>
+
+    <script>
+        function verificar(){
+            var country = document.getElementById('pais')
+            var res = document.getElementById('res')
+            var p = String(country.value)
+            res.innerHTML = `<p>Você mora em <strong>${p}</strong>.</p>`
+            if (p == 'Brasil') {
+                res.innerHTML += `<p>Você é Brasileiro.</p>`
+            }else {
+                res.innerHTML += '<p>Você é Estrangeiro</p>'
+            }
+            
+        } 
+    </script>
+    </div>
+    
+</body>
+</html>

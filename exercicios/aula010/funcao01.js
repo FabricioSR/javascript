@@ -6,4 +6,4 @@ function parimp(n) {
     }
 }
 
-console.log(parimp(300))
+console.log(parimp(13))

@@ -18,7 +18,7 @@ maneira mais simplificada abaixo
 */
 
 for(let pos in valores) {
-    console.log(`A posição ${pos} temo valor ${valores[pos]}`)
+    console.log(`A posição ${pos} temos valor ${valores[pos]}`)
 }
 
 

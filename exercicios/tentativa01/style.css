@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(34, 34, 34);
+    letter-spacing: 0.1rem;
+    width: 100vw;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.menu:hover {
+    color: white;
+    transform: rotate(180deg);
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+
+
+.titulo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    
+    font-weight: bolder;
+}
+
+    span {
+        color: red;
+    }
+
+@media screen and (min-width: 950px) {   
+    
+    nav {
+        background-color: rgb(82, 100, 82);
+        width: 100vw;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        position: absolute;
+        padding: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.877);   
+    }
+
+    .menu {
+        display: none;
+    }
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0.5rem 1rem;
+}   
+
+.links {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;        
+    padding: 1rem 1rem;
+    transition: all 0.3s linear;
+    gap: 30px;
+}
+
+.links:hover {
+    padding-left: 1.5rem;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    padding-top: 0.5rem;
+    color: black;
+}
+
+.social-links {
+    padding: 1rem 1rem;
+    transition: all 0.3s linear;
+    gap: 30px;
+}
+
+.social-links:hover {
+    padding-left: 1.5rem;
+}
+
+.hero{
+    width: 100vw;
+    height: 740px;
+    background-image: url(pexels-burst-374870.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.apresentacao {
+    display: grid;
+    text-align: center;     
+    position:absolute;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    top: 200px;
+    left: 50px;
+    background-color: rgba(34, 34, 34, 0.349);
+    border-radius: 15px;
+}
+
+.apresentacao h2 {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.apresentacao p {
+    color: rgb(245, 239, 239);
+    text-align:center;
+}
+
+}
+@media screen and (max-width: 950px) {
+    nav {
+        background-color: rgb(82, 100, 82);
+        width: 100vw;
+        position: absolute;        
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.877);   
+    }
+
+    .titulo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 35px;
+    }
+
+    .lnks {
+        display: flex;
+        flex-direction: column; 
+        
+    }    
+        
+    .links {
+        font-size: 1rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        letter-spacing: 0.1rem;        
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s linear;
+    }
+
+    .links a:hover {
+        background: hsl(133, 8%, 54%);
+        color: hsl(0, 0%, 0%);
+        padding-left: 1.5rem;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    .links {
+        
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+
+    .show-links {
+        height: 10rem;
+    }
+}
